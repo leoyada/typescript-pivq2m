@@ -1,30 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap');
+
 html,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
   text-align: center;
   overflow-x: hidden;
-  color: #EEE;
+  font-family: 'Mountains of Christmas', cursive;
 }
 
-h1 {
-
+.hero {
+  width: 100%;
 }
 
 main {
   height: 100vh;
   overflow-y: scroll;
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
 }
 
 .page {
   scroll-snap-align: start;
-  background-image: linear-gradient(315deg, #ff7878 0%, #ff0000 74%);
+  /* background-image: linear-gradient(315deg, #ff7878 0%, #ff0000 74%); */
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 30px;
+}
+
+.page_no-pad {
+  padding: 0;
+}
+
+p {
+  font-size: 32px;
+}
+
+.big {
+  font-size: 120px;
+  animation: pulse 500ms infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
 }
