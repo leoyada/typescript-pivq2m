@@ -10,8 +10,9 @@ body {
   font-family: 'Mountains of Christmas', cursive;
 }
 
-.hero {
+img {
   width: 100%;
+  max-width: 100%;
 }
 
 main {
@@ -22,7 +23,6 @@ main {
 
 .page {
   scroll-snap-align: start;
-  /* background-image: linear-gradient(315deg, #ff7878 0%, #ff0000 74%); */
   height: 100vh;
   display: flex;
   align-items: center;
